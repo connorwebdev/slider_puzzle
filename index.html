@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sliding Puzzle</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="game">
+
+		<div class="col col-1">
+			<p>Difficulty</p>
+			<select name="difficulty" id="difficulty">
+				<option value="3x3">3x3</option>
+				<option value="3x4">3x4</option>
+				<option value="4x4">4x4</option>
+				<option value="4x5">4x5</option>
+			</select>
+			<p>Show Numbers</p>
+			<select name="numbers" id="numbers">
+				<option value="nonumbers">No Numbers</option>
+				<option value="numbers">Numbers</option>
+			</select>
+		</div>
+
+		<div class="col col-2">
+			<div id="grid"></div>
+		</div>
+
+	</section>
+	
+	<script src="js/piece.js"></script>
+	<script src="js/space.js"></script>
+	<script src="js/board.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/app.js"></script>
+	
+
+</body>
+</html>

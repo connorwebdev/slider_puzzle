@@ -1,0 +1,117 @@
+body{
+	padding: 30px;
+	display: flex;
+	background-color:#eee;
+}
+
+.game{
+	display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	width:689px;
+	flex-wrap: wrap;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 10px;
+}
+
+#grid{
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+.col-1{
+	margin-right: 60px;
+	width:calc( 100% - 542px );
+}
+
+.col-2{
+	width:482px;
+}
+
+.winMessageWrap{
+	width:100%;
+}
+
+.winMessage{
+	width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.resetButton{
+	margin-bottom: 50px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 3px;
+	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.resetButton:hover{
+	cursor: pointer;
+}
+
+.piece{
+	width: 160px;
+	height: 160px;
+	border:  1px solid #ccc;
+	box-sizing: border-box;
+	position: absolute;
+	background-image: url(../img/3x3.jpg);
+	background-size: 480px;
+	transition:  all .1s ease-in-out;
+	z-index: 2;
+}
+
+.piece.three-by-four{
+	background-image: url(../img/3x4-2.jpg);
+	background-size: 640px 480px;
+}
+
+.piece.four-by-four{
+	background-image: url(../img/4x4.jpg);
+	background-size: 640px;
+}
+
+.piece.four-by-five{
+	background-image: url(../img/4x5.jpg);
+	background-size: 800px 640px;
+}
+
+.space{
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	z-index: 1;
+}
+
+.count{
+	display: inline-block;
+	padding: 10px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px black;
+}
+
+.hide {
+	display: none;
+}
+
+#difficulty,
+#numbers{
+	display: block;
+	margin-bottom: 25px;
+	font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3px 15px;
+    border: none;
+}
